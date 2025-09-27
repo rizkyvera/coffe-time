@@ -11,11 +11,19 @@ export default function Products() {
   const { addToCart } = useCart();
 
   const products = [
-    { id: 1, name: 'ICED Espresso – bustina', price: 'Rp 200.000', image: '/master1.jpg' },
-    { id: 2, name: 'AMAANYI, 100% Arabica beans', price: 'Rp 250.000', image: '/kopi3.jpg' },
-    { id: 3, name: 'AMAANYI, Arabica ground coffee', price: 'Rp 300.000', image: '/kopi4.jpg' },
-    { id: 4, name: 'Roastery Special Blend', price: 'Rp 200.000', image: '/kopi2.jpg' },
+    { id: 1, name: 'ICED Espresso – bustina', price: 200000, image: '/master1.jpg' },
+    { id: 2, name: 'AMAANYI, 100% Arabica beans', price: 250000, image: '/kopi3.jpg' },
+    { id: 3, name: 'AMAANYI, Arabica ground coffee', price: 300000, image: '/kopi4.jpg' },
+    { id: 4, name: 'Roastery Special Blend', price: 200000, image: '/kopi2.jpg' },
   ];
+
+  const formatRupiah = (amount: number) => {
+    return new Intl.NumberFormat('id-ID', {
+      style: 'currency',
+      currency: 'IDR',
+      minimumFractionDigits: 0,
+    }).format(amount);
+  };
 
   return (
     <main>
@@ -34,7 +42,7 @@ export default function Products() {
               </div>
               <div className="p-4 text-center">
                 <h2 className="text-[#6e543b] font-semibold text-base">{product.name}</h2>
-                <p className="text-gray-600 text-sm mt-2">{product.price}</p>
+                <p className="text-gray-600 text-sm mt-2">{formatRupiah(product.price)}</p>
 
                 <SignedIn>
                   <button onClick={() => addToCart(product)} className="mt-3 px-4 py-2 bg-[#6e543b] text-white rounded-full hover:bg-[#4e3b2a] transition">

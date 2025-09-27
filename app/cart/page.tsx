@@ -37,7 +37,7 @@ export default function CartPage() {
                 <div className="flex-1">
                   <h2 className="font-semibold text-[#6e543b]">{item.name}</h2>
                   <p className="text-gray-600">
-                    {formatRupiah(Number(item.price))} x {item.quantity}
+                    {formatRupiah(item.price)} x {item.quantity}
                   </p>
                 </div>
                 <button onClick={() => removeFromCart(item.id)} className="px-3 py-1 bg-red-600 text-white rounded-full hover:bg-red-700 transition">
