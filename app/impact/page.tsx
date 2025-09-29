@@ -40,8 +40,8 @@ const Impact = () => {
               <p className="text-sm mt-2 text-gray-600">Setiap cangkir kopi yang kamu beli ikut membantu keberlangsungan hidup para petani kopi.</p>
             </div>
           </div>
-          <div className="relative w-full h-[600px] mt-6 rounded-lg overflow-hidden shadow-lg">
-            <Image src="/master1.jpg" alt="Industrial architecture" fill className="object-cover" />
+          <div className="relative w-full h-[220px] sm:h-[350px] md:h-[500px] mt-6 rounded-md md:rounded-lg overflow-hidden shadow-lg">
+            <Image src="/master1.jpg" alt="Industrial architecture" fill className="object-cover object-center" />
           </div>
         </section>
       </div>

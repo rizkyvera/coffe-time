@@ -12,8 +12,8 @@ const Commitment = () => {
           <div className="text-3xl font-bold text-[#6e543b] text-center">
             <h1>Our Promise to You</h1>
           </div>
-          <div className="relative w-full h-[600px] mt-6 rounded-lg overflow-hidden shadow-lg">
-            <Image src="/kopi.jpeg" alt="Industrial architecture" fill className="object-cover" />
+          <div className="relative w-full h-[220px] sm:h-[350px] md:h-[500px] mt-6 rounded-md md:rounded-lg overflow-hidden shadow-lg">
+            <Image src="/kopi.jpeg" alt="Industrial architecture" fill className="object-cover object-center" />
           </div>
         </section>
 

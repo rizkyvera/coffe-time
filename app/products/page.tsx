@@ -34,7 +34,7 @@ export default function Products() {
           <h1>Our Coffee Selection</h1>
         </div>
 
-        <section className="grid grid-cols-2 md:grid-cols-4 gap-8 px-10 py-10">
+        <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 px-6 py-10">
           {products.map((product) => (
             <div key={product.id} className="border rounded-lg shadow-sm overflow-hidden bg-white hover:shadow-lg transition">
               <div className="h-48 relative">
